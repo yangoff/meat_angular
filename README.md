@@ -39,3 +39,4 @@ Expressões regulares usadas na validação de formulários
 ## Créditos
 
 Todas as imagens usadas na aplicação são pertencentes a freepik.com
+Aprendido em cod3er.com
