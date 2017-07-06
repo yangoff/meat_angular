@@ -2,12 +2,12 @@
 
     <!--menu item-->
     <mt-menu-item *ngFor="let item of menu | async"
-                           [menuItem]="item" (add)="addMenuItem($event)"></mt-menu-item>
+                           [menuItem]="item" (add)="shoppingCart.add($event)"></mt-menu-item>
     <!-- /.info-box -->
 
   </div>
 <div class="col-md-3 col-xs-12">
   <!--INICIO DO CARRINHO-->
-  <mt-shopping-cart></mt-shopping-cart>
+  <mt-shopping-cart #shoppingCart></mt-shopping-cart>
 <!-- FIM DO CARRINHO -->
 </div>
