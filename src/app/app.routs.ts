@@ -6,6 +6,7 @@ import {RestaurantsComponent} from './restaurants/restaurants.component'
 import {RestaurantDetailComponent} from './restaurant-detail/restaurant-detail.component'
 import {MenuComponent} from 'app/restaurant-detail/menu/menu.component'
 import{ReviewsComponent}from 'app/restaurant-detail/reviews/reviews.component'
+import {OrderComponent} from 'app/order/order.component'
 
 export const ROUTES: Routes = [
 
@@ -19,5 +20,6 @@ export const ROUTES: Routes = [
         {path:'reviews',component:ReviewsComponent}
 
       ]
-    }
+    },
+    {path:'order',component: OrderComponent}
 ]
