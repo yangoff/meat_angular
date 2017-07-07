@@ -1,4 +1,4 @@
-# Meat - Angular App Starter
+# Meat - Restaurantes
 
 ## 1. Passos para começar
 
@@ -34,5 +34,4 @@ Expressões regulares usadas na validação de formulários
 
 ## Créditos
 
-Todas as imagens usadas na aplicação são pertencentes a freepik.com
-Aprendido em cod3er.com
+Todas as imagens usadas na aplicação são pertencentes a freepik.com e cod3r.
