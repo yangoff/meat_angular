@@ -400,6 +400,19 @@
         }
       ],
       "id": 2
+    },
+    {
+      "adderess": "Rua errorex",
+      "number": "102",
+      "optionalAdderess": "tete",
+      "paymentOption": "DEB",
+      "orderItems": [
+        {
+          "itemQTY": 2,
+          "itemID": "cup-cake"
+        }
+      ],
+      "id": 3
     }
   ]
 }

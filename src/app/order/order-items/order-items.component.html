@@ -1,4 +1,4 @@
-<div class="col-xs-12" *ngIf="!items" >
+<div class="col-xs-12" *ngIf="items.length === 0" >
 <br/>
 <p>
 Não ha items em seu carrinho, visite nosso<a [routerLink]="['/restaurants']"> cardápio</a>
@@ -6,7 +6,7 @@ Não ha items em seu carrinho, visite nosso<a [routerLink]="['/restaurants']"> c
 <br/>
 <br/>
 </div>
-<div class="col-xs-12 table-responsive" *ngIf="items">
+<div class="col-xs-12 table-responsive" *ngIf="items.length > 0">
 
   <table class="table table-striped">
     <thead>
@@ -30,7 +30,7 @@ Não ha items em seu carrinho, visite nosso<a [routerLink]="['/restaurants']"> c
       <td>{{item.menuItem.description}}</td>
       <td class="text-right">{{item.value() | currency : 'BRL' : true}}</td>
       <td class="text-right">
-        <a (click)="remove(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>
+        <a (click)="emitremove(item)" class="btn btn-sm danger"><i class="fa fa-remove"></i></a>
       </td>
     </tr>
 
