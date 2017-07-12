@@ -5,6 +5,8 @@ export interface Restaurant{
   category : string
   rating : number
   imagePath : string
+  hours? : string
+  about? : string
 
 
 

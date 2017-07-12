@@ -1,7 +1,7 @@
 import {Routes} from '@angular/router'
 
 import {HomeComponent} from './home/home.component'
-
+import {NotFoundComponent} from 'app/not-found/not-found.component'
 import {RestaurantsComponent} from './restaurants/restaurants.component'
 import {RestaurantDetailComponent} from './restaurant-detail/restaurant-detail.component'
 import {MenuComponent} from 'app/restaurant-detail/menu/menu.component'
@@ -23,5 +23,6 @@ export const ROUTES: Routes = [
       ]
     },
     {path:'order',loadChildren: 'app/order/order.module#OrderModule'},
-    {path:'order-summary',component:OrderSummaryComponent}
+    {path:'order-summary',component:OrderSummaryComponent},
+    {path:'**',component:NotFoundComponent}
 ]
