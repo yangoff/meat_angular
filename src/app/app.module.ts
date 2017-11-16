@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,LOCALE_ID } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule,PreloadAllModules } from '@angular/router';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import { AppComponent } from './app.component';
@@ -37,7 +37,7 @@ import {HashLocationStrategy,LocationStrategy} from '@angular/common'
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
